@@ -1,0 +1,32 @@
+.home {    
+    height: 93vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-image: url("./../../images/home.jpg");
+	background-size: cover;	
+	opacity: 0.5;
+}
+.home-box {
+	position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 30em;
+	color: #003B1B;
+}
+
+.home-box h2 {
+	font-size: 25px;
+}
+
+.home-box p {
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+.home-wrapper {
+	position: relative;
+}
+
+
+

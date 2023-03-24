@@ -1,0 +1,51 @@
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;   
+    height: 66px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.zone {   
+    cursor:pointer;
+    color:#FFF;
+    font-size: 2em;    
+    transition: all 0.3s linear;
+    background: linear-gradient(45deg, #FFFBE7, transparent);
+}
+
+.zone:hover {   
+    box-shadow:#f1eac1 0px 5px 15px, inset #9b967c17 0px -10px 20px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+    z-index: 10;
+  }
+
+li {
+    padding: 20px;    
+}
+
+li a {
+    color: #003B1B;
+}
+
+a {    
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header-logo {
+    font-weight: 800;
+    line-height: 1;
+}

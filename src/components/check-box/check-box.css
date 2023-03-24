@@ -1,0 +1,33 @@
+input[type="checkbox"] {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	/* creating a custom design */
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 0.15em;
+	margin-right: 0.5em;
+	border: 0.15em solid #F9D07C;
+	outline: none;
+	cursor: pointer;
+}
+
+input.checked {
+	background-color: #F9D07C;
+	position: relative;
+}
+
+input[type="checkbox"]:disabled {
+	border-color: #c0c0c0;
+	background-color: #c0c0c0;
+}
+  
+input[type="checkbox"]:focus {
+	box-shadow: 0 0 20px #F9D07C;
+}
+
+.checkbox-label{
+	display: flex;
+    justify-content: center;
+    line-height: 1.4;
+}

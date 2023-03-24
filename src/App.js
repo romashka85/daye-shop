@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { HashRouter, Route } from 'react-router-dom';
+// import StreamCreate from './streams/streamCreate';
+// import StreamEdit from './streams/streamEdit';
+// import StreamDelete from './streams/streamDelete';
+// import StreamList from './streams/streamList';
+// import StreamShow from './streams/streamShow';
+import Navigation from './components/navigation/Navigation';
+import ProductList from './components/product-list/ProductList';
+import About from "./components/about/About";
+import Home from "./components/home/Home";
+import ProductDetail from './components/product-detail/Product-detail';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css"
+
+const App = () => {
+	return (				
+		<HashRouter>				
+			<Navigation/>	
+			<div className='app'>
+				<Route path="/" exact component={Home}/>
+				<Route path="/products" exact component={ProductList}/>
+				<Route path="/about" exact component={About}/>
+				<Route path="/product/:id" exact component={ProductDetail}/>		
+			</div>				
+		</HashRouter>		
+	)
 }
 
 export default App;

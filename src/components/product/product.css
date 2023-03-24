@@ -1,0 +1,35 @@
+.product-image img{
+	width: 350px;			
+}
+
+.product-image {
+	position: relative;	
+	background: #FAEAD6;		
+}
+
+.product {
+	width: 350px;	
+}
+
+.product-info {
+	display: flex;
+    justify-content: space-between;
+    color: #003B1B;
+    font-size: 18px;
+    padding-top: 5px; 
+}
+
+.show-more {
+	position: absolute;
+    bottom: 33px;
+    left: 30%;
+    display: none;	
+}
+
+.product-image:hover .show-more {
+	display: block;
+}
+
+.product-image:hover {
+	opacity: 0.7;
+}
