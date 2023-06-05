@@ -18,7 +18,7 @@ const ProductDetail = () => {
 	  setCheckedTwo(!checkedTwo);
 	};
 
-	const addToCart = (item) => {
+	const addToCart = (item) => {	
 		console.log("item", item);
 	};
 
